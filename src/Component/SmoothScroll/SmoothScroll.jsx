@@ -22,19 +22,12 @@ function SmoothScroll({ children }) {
 
       // General smoothing
       lerp: 0.08,
+
+      // Let Lenis handle its own animation frame
+      autoRaf: true,
     });
 
-    let animationFrame;
-
-    const raf = (time) => {
-      lenis.raf(time);
-      animationFrame = requestAnimationFrame(raf);
-    };
-
-    animationFrame = requestAnimationFrame(raf);
-
     return () => {
-      cancelAnimationFrame(animationFrame);
       lenis.destroy();
     };
   }, []);
