@@ -9,13 +9,38 @@ body,
 }
 
 html {
-  scroll-behavior: auto;
+  height: auto;
+  scroll-behavior: auto !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
 }
 
 body {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
   overflow-x: hidden;
+  overflow-y: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: auto;
 }
 
+main {
+  min-height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+/* No scroll snapping */
+.section {
+  overflow: visible;
+  scroll-snap-align: none;
+  scroll-snap-stop: normal;
+}
+
+/* Hide scrollbar but keep scrolling */
 html,
 body {
   scrollbar-width: none;

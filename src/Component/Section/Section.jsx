@@ -1,13 +1,9 @@
-import { motion } from "motion/react";
-
 function Section({ children, className = "" }) {
   return (
     <section
-      className={`relative min-h-dvh w-full overflow-hidden ${className}`}
+      className={`relative w-full overflow-visible ${className}`}
     >
-      <motion.div className="w-full">
-        {children}
-      </motion.div>
+      {children}
     </section>
   );
 }
