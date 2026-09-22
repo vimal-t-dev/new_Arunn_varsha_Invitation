@@ -8,8 +8,9 @@ body,
   margin: 0;
 }
 
+/* Keep normal browser scrolling */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
 }
 
 /* Hide scrollbar but keep scrolling enabled */
+
 html,
 body {
   scrollbar-width: none;

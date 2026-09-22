@@ -11,11 +11,9 @@ function Section({ children, className = "" }) {
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.2, 0.8, 1],
-    [0.5, 1, 1, 0.5],
+    [0, 0.15, 0.85, 1],
+    [0.7, 1, 1, 0.7],
   );
-
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], [50, 0, -50]);
 
   return (
     <motion.section
@@ -25,8 +23,8 @@ function Section({ children, className = "" }) {
       <motion.div
         style={{
           opacity,
-          y,
         }}
+        className="w-full"
       >
         {children}
       </motion.div>
