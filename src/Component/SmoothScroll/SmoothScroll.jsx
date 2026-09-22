@@ -11,7 +11,7 @@ function SmoothScroll({ children }) {
       syncTouch: true,
 
       // Touch inertia
-      syncTouchLerp: 0.1,
+      syncTouchLerp: 0.08,
       touchInertiaExponent: 1.8,
 
       // Touch sensitivity
