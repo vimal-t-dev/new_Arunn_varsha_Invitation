@@ -11,14 +11,14 @@ function SmoothScroll({ children }) {
       syncTouch: true,
 
       // Touch inertia
-      syncTouchLerp: 0.14,
-      touchInertiaExponent: 2.1,
+      syncTouchLerp: 0.2,
+      touchInertiaExponent: 2.5,
 
       // Touch sensitivity
-      touchMultiplier: 1.2,
+      touchMultiplier: 1.5,
 
       // Mouse wheel sensitivity
-      wheelMultiplier: 1,
+      wheelMultiplier: 1.3,
 
       // General smoothing
       lerp: 0.08,
