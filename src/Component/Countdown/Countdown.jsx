@@ -238,9 +238,12 @@ function Countdown() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             className="block h-[clamp(300px,49dvh,450px)] w-full object-cover"
-          />
+            style={{
+                transform: "translateZ(0)",
+            }}
+            />
 
           {/* SOFT VIDEO OVERLAY */}
 
