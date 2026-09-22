@@ -7,14 +7,16 @@ import WeddingHome from "./Component/WeddingHome/WeddingHome";
 
 function App() {
   return (
-    <main className="w-full overflow-x-hidden">
-      <WeddingHome />
-      <ScratchCard />
-      <Countdown />
-      <Events />
-      <Quote />
-      <ThankYou />
-    </main>
+    <SmoothScroll>
+      <main className="w-full overflow-x-hidden">
+        <WeddingHome />
+        <ScratchCard />
+        <Countdown />
+        <Events />
+        <Quote />
+        <ThankYou />
+      </main>
+    </SmoothScroll>
   );
 }
 
