@@ -4,6 +4,7 @@ import Quote from "./Component/Quote/Quote";
 import ScratchCard from "./Component/ScratchCard/ScratchCard";
 import ThankYou from "./Component/ThankYou/ThankYou";
 import WeddingHome from "./Component/WeddingHome/WeddingHome";
+import SmoothScroll from "./Component/SmoothScroll/SmoothScroll";
 
 function App() {
   return (
