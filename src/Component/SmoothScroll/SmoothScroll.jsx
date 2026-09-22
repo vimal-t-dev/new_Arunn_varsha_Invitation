@@ -12,10 +12,10 @@ function SmoothScroll({ children }) {
 
       // Touch inertia
       syncTouchLerp: 0.08,
-      touchInertiaExponent: 1.8,
+      touchInertiaExponent: 1.7,
 
       // Touch sensitivity
-      touchMultiplier: 1.2,
+      touchMultiplier: 1.1,
 
       // Mouse wheel sensitivity
       wheelMultiplier: 1,
