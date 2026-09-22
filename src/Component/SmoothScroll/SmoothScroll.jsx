@@ -12,12 +12,14 @@ function SmoothScroll({ children }) {
       lerp: 0.08,
     });
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
+    let animationFrame;
 
-    const animationFrame = requestAnimationFrame(raf);
+    const raf = (time) => {
+      lenis.raf(time);
+      animationFrame = requestAnimationFrame(raf);
+    };
+
+    animationFrame = requestAnimationFrame(raf);
 
     return () => {
       cancelAnimationFrame(animationFrame);

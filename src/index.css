@@ -16,8 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Hide scrollbar but keep scrolling enabled */
-
 html,
 body {
   scrollbar-width: none;
