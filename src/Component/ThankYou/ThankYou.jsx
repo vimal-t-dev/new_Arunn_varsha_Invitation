@@ -20,7 +20,6 @@ function ThankYou() {
       {/* ========================================= */}
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col items-center justify-center px-8 text-center">
-
         {/* ========================================= */}
         {/* STAR */}
         {/* ========================================= */}
@@ -171,34 +170,37 @@ function ThankYou() {
             made with love by
           </p>
 
-          <div className="mt-[1.2dvh] flex items-center justify-center gap-2">
-            <span className="text-[clamp(9px,1.6dvh,12px)] text-[#f0c56a]">
-              @ _vimal_
-            </span>
+          <div className="mt-2 flex items-center gap-2">
+            <p className="text-[10px] font-medium tracking-wide text-[#f1d99b]">
+              @__.vimal_
+            </p>
 
-            {/* Instagram circle */}
-            <motion.div
-              whileTap={{ scale: 0.9 }}
-              whileHover={{ scale: 1.08 }}
-              className="
-                flex
-                h-[clamp(32px,6dvh,42px)]
-                w-[clamp(32px,6dvh,42px)]
-                items-center
-                justify-center
-                rounded-full
-                bg-gradient-to-br
-                from-[#f9ce34]
-                via-[#ee2a7b]
-                to-[#6228d7]
-                text-white
-                shadow-lg
-              "
+            {/* Instagram */}
+
+            <a
+              href="https://www.instagram.com/__.vimal_/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white shadow-lg transition-transform hover:scale-110"
             >
-              <span className="text-[clamp(16px,3dvh,21px)]">
-                ◎
-              </span>
-            </motion.div>
+              <svg
+                viewBox="0 0 24 24"
+                className="h-5 w-5 fill-none stroke-current"
+                strokeWidth="1.8"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+
+                <circle cx="12" cy="12" r="4" />
+
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  className="fill-current stroke-none"
+                />
+              </svg>
+            </a>
           </div>
         </motion.div>
       </div>
