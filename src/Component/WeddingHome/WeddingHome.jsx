@@ -21,7 +21,7 @@ function WeddingHome() {
         </p>
 
         {/* Om */}
-        <div className="mt-[15vh] text-4xl text-[#b47716]">ॐ</div>
+        <div className="mt-[13vh] text-4xl text-[#b47716]">ॐ</div>
 
         {/* Bride & Groom Names */}
         <div className="mt-[5vh]">
