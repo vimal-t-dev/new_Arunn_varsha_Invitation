@@ -4,11 +4,23 @@ import Lenis from "lenis";
 function SmoothScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.1,
+      // Smooth mouse wheel
       smoothWheel: true,
-      syncTouch: false,
+
+      // Smooth touch scrolling
+      syncTouch: true,
+
+      // Touch inertia
+      syncTouchLerp: 0.075,
+      touchInertiaExponent: 1.7,
+
+      // Touch sensitivity
       touchMultiplier: 1,
+
+      // Mouse wheel sensitivity
       wheelMultiplier: 1,
+
+      // General smoothing
       lerp: 0.08,
     });
 
