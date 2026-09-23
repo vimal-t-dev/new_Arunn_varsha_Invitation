@@ -490,7 +490,7 @@ function ScratchCard() {
           transition={{
             duration: 0.7,
           }}
-          className="shrink-0 text-[clamp(7px,1.3dvh,10px)] uppercase tracking-[0.35em] text-[#7d173c]"
+          className="shrink-0 text-[clamp(7px,1.3dvh,10px)] uppercase tracking-[0.35em] text-[#7d173c] font-bold"
         >
           Mark Your Heart
         </motion.p>

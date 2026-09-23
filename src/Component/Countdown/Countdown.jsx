@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
+import React from "react";
 
 import countdownBg from "../../assets/wedding/Countdown_BG.jpg";
 import weddingVideo from "../../assets/wedding/Wedding-Video.mp4";
@@ -153,58 +154,113 @@ function Countdown() {
         {/* ================================================= */}
 
         <motion.div
+  initial={{
+    opacity: 0,
+    scale: 0.95,
+    y: 15,
+  }}
+  whileInView={{
+    opacity: 1,
+    scale: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: true,
+  }}
+  transition={{
+    duration: 0.8,
+    delay: 0.15,
+  }}
+  className="
+    mt-[2.2dvh]
+    flex
+    w-full
+    items-center
+    justify-center
+    rounded-[18px]
+    bg-gradient-to-r
+  from-[#B8CDB8]
+  via-[#C6D5C2]
+  to-[#D8D8C0]
+    px-[3vw]
+    py-[2.2dvh]
+  "
+>
+  {countdownItems.map((item, index) => (
+    <React.Fragment key={item.label}>
+      {/* COUNTDOWN ITEM */}
+      <div
+        className="
+          flex
+          min-w-0
+          flex-1
+          flex-col
+          items-center
+          justify-center
+        "
+      >
+        {/* NUMBER */}
+        <motion.span
+          key={item.value}
           initial={{
-            opacity: 0,
-            scale: 0.95,
-            y: 15,
+            opacity: 0.5,
+            y: -3,
           }}
-          whileInView={{
+          animate={{
             opacity: 1,
-            scale: 1,
             y: 0,
           }}
-          viewport={{
-            once: true,
-          }}
           transition={{
-            duration: 0.8,
-            delay: 0.15,
+            duration: 0.25,
           }}
-          className="mt-[2.2dvh] grid w-full grid-cols-4 gap-[1vw] rounded-[20px] border-2 border-[#d5a84d] bg-[#fffaf0]/90 p-[0.8vw] shadow-md"
+          className="
+            font-['Montserrat']
+            text-[clamp(30px,6.5dvh,52px)]
+            font-medium
+            leading-none
+            tracking-[-0.02em]
+            text-[#151b2b]
+          "
         >
-          {countdownItems.map((item, index) => (
-            <div
-              key={item.label}
-              className="flex min-w-0 flex-col items-center justify-center rounded-[16px] bg-[#74163c] py-[1.7dvh] shadow-sm"
-            >
-              {/* NUMBER */}
+          {formatNumber(item.value)}
+        </motion.span>
 
-              <motion.span
-                key={item.value}
-                initial={{
-                  opacity: 0.5,
-                  y: -3,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 0.25,
-                }}
-                className="font-serif text-[clamp(25px,5dvh,38px)] font-semibold leading-none text-white"
-              >
-                {formatNumber(item.value)}
-              </motion.span>
+        {/* LABEL */}
+        <span
+          className="
+            mt-[1.2dvh]
+            text-[clamp(7px,1.25dvh,11px)]
+            font-medium
+            tracking-wide
+            text-[#172033]
+          "
+        >
+          {item.label}
+        </span>
+      </div>
 
-              {/* LABEL */}
-
-              <span className="mt-[1dvh] text-[clamp(6px,1.1dvh,9px)] font-semibold text-white">
-                {item.label}
-              </span>
-            </div>
-          ))}
-        </motion.div>
+      {/* COLON */}
+      {index < countdownItems.length - 1 && (
+        <span
+          className="
+            mb-[2.3dvh]
+            flex
+            items-center
+            justify-center
+            px-[0.3vw]
+            font-serif
+            text-[clamp(25px,5.5dvh,44px)]
+            font-medium
+            leading-none
+            text-[#151b2b]
+          "
+        >
+          :
+        </span>
+      )}
+    </React.Fragment>
+  ))}
+</motion.div>
 
         {/* ================================================= */}
         {/* VIDEO */}

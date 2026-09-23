@@ -21,7 +21,6 @@ function Quote() {
       {/* ========================================= */}
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col items-center justify-center px-8 text-center">
-
         {/* ========================================= */}
         {/* FOREVER */}
         {/* ========================================= */}
@@ -43,10 +42,10 @@ function Quote() {
             ease: "easeOut",
           }}
           className="
-            font-serif
+            maghifirea
             text-[clamp(38px,8dvh,58px)]
             leading-none
-            text-[#d89500]
+            text-[#74163C]
           "
         >
           Forever
@@ -75,11 +74,11 @@ function Quote() {
           }}
           className="
             mt-[0.5dvh]
-            font-serif
+            maghifirea
             text-[clamp(30px,6dvh,45px)]
             italic
             leading-none
-            text-[#e08b00]
+            text-[#B47716]
           "
         >
           Together
@@ -109,7 +108,7 @@ function Quote() {
           className="
             mt-[3dvh]
             text-[clamp(24px,4dvh,32px)]
-            text-[#e08b00]
+            text-[#A56818]
           "
         >
           ∞
@@ -139,10 +138,10 @@ function Quote() {
           className="
             mt-[3dvh]
             max-w-[280px]
-            font-serif
+            creme-espana
             text-[clamp(19px,3.5dvh,27px)]
             leading-[1.45]
-            text-[#e08b00]
+            text-[#4A2923]
           "
         >
           However near or far
@@ -180,7 +179,7 @@ function Quote() {
             mt-[4dvh]
             font-serif
             text-[clamp(13px,2.2dvh,17px)]
-            text-[#e08b00]
+            text-[#A56818]
           "
         >
           With love,
@@ -211,13 +210,11 @@ function Quote() {
             font-serif
             text-[clamp(20px,3.5dvh,27px)]
             italic
-            text-[#e08b00]
+            text-[#4A2923]
           "
         >
           Arunn
-          <span className="mx-2 text-[#7d173c]">
-            ♥
-          </span>
+          <span className="mx-2 text-[#74163C]">♥</span>
           Varsha
         </motion.p>
       </div>

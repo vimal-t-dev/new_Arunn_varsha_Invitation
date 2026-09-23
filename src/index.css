@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Magilio";
+  src: url("./assets/fonts/MagilioRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maghifirea";
+  src: url("./assets/fonts/Maghfirea.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.maghifirea {
+  font-family: "Maghifirea", serif;
+}
+
+@font-face {
+  font-family: "CremeEspana";
+  src: url("./assets/fonts/CremeEspana.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.creme-espana {
+  font-family: "CremeEspana", serif;
+}
+
 
 html,
 body,

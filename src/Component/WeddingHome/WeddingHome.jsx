@@ -16,7 +16,7 @@ function WeddingHome() {
       {/* Content */}
       <div className="relative z-10 flex h-full w-full flex-col items-center text-center">
         {/* Blessings */}
-        <p className="mt-[4vh] px-6 text-[10px] font-medium tracking-[0.25em] text-yellow-800 sm:text-xs">
+        <p className="mt-[4vh] px-6 text-[10px] font-bold tracking-[0.25em] text-yellow-800 sm:text-xs font-mono">
           WITH THE BLESSINGS OF OUR FAMILIES
         </p>
 
@@ -25,20 +25,22 @@ function WeddingHome() {
 
         {/* Bride & Groom Names */}
         <div className="mt-[5vh]">
-          <h1 className="text-4xl font-semibold text-[#6b1734] sm:text-5xl">
+          <h1 className="font-['Magilio'] text-4xl font-normal text-[#74163c] sm:text-5xl">
             Arunn
           </h1>
 
-          <p className="my-1 text-2xl text-[#a56818]">&</p>
+          <p className="my-1 font-['Magilio'] text-2xl font-normal text-[#a56818]">
+            &
+          </p>
 
-          <h1 className="text-4xl font-semibold text-[#6b1734] sm:text-5xl">
+          <h1 className="font-['Magilio'] text-4xl font-normal text-[#74163c] sm:text-5xl">
             Varsha
           </h1>
         </div>
 
         {/* Groom Details */}
         <div className="mt-[5vh]">
-          <h2 className="font-serif text-2xl font-bold text-[#24120f] sm:text-3xl">
+          <h2 className="font-serif text-2xl font-bold text-[#7A4B2A] sm:text-3xl">
             Arunn
           </h2>
 
@@ -49,7 +51,7 @@ function WeddingHome() {
 
         {/* Bride Details */}
         <div className="mt-[3vh]">
-          <h2 className="font-serif text-2xl font-bold text-[#24120f] sm:text-3xl">
+          <h2 className="font-serif text-2xl font-bold text-[#7A4B2A] sm:text-3xl">
             Varsha
           </h2>
 

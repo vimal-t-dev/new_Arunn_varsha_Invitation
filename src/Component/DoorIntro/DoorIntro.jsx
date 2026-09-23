@@ -110,100 +110,134 @@ function DoorIntro({ onOpen }) {
       />
 
       {/* ================================================= */}
-      {/* ARUNN - LEFT DOOR */}
+{/* ARUNN - CENTER TOP */}
+{/* ================================================= */}
+
+{!isOpening && (
+  <motion.div
+    initial={{
+      opacity: 0,
+      y: -15,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+      delay: 0.4,
+      duration: 0.8,
+    }}
+    className="
+      pointer-events-none
+      absolute
+      left-1/2
+      top-[47%]
+      z-30
+      -translate-x-1/2
+      -translate-y-1/2
+      text-center
+    "
+  >
+    <p
+      className="
+        maghifirea
+        whitespace-nowrap
+        text-[clamp(30px,7vw,54px)]
+        font-normal
+        tracking-wide
+        text-[#F8E7B0]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.35)]
+      "
+    >
+      Arunn
+    </p>
+  </motion.div>
+)}
+
+    {/* ================================================= */}
+{/* HEART BETWEEN NAMES */}
+{/* ================================================= */}
+
+{!isOpening && (
+  <motion.div
+    initial={{
+      opacity: 0,
+      scale: 0.7,
+    }}
+    animate={{
+      opacity: 1,
+      scale: 1,
+    }}
+    transition={{
+      delay: 0.5,
+      duration: 0.6,
+    }}
+    className="
+      pointer-events-none
+      absolute
+      left-1/2
+      top-[51.5%]
+      z-30
+      -translate-x-1/2
+      -translate-y-1/2
+    "
+  >
+    <span
+      className="
+        text-[clamp(20px,5vw,32px)]
+        text-[#E8A1A8]
+        drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]
+      "
+    >
+      ♥
+    </span>
+  </motion.div>
+)}
+
       {/* ================================================= */}
+{/* VARSHA - CENTER BOTTOM */}
+{/* ================================================= */}
 
-      {!isOpening && (
-        <motion.div
-          initial={{
-            opacity: 0,
-            x: -20,
-          }}
-          animate={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            delay: 0.4,
-            duration: 0.8,
-          }}
-          className="
-            pointer-events-none
-            absolute
-            left-[25%]
-            top-[48%]
-            z-30
-            -translate-x-1/2
-            -translate-y-1/2
-            text-center
-          "
-        >
-          <p
-            className="
-              font-serif
-              text-[clamp(28px,7vw,54px)]
-              italic
-              font-medium
-              tracking-wide
-              text-[#6B1734]
-              drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]
-            "
-          >
-            Arunn
-          </p>
-
-          {/* Small decorative line */}
-          <div className="mx-auto mt-2 h-px w-16 bg-[#e3bd69]/80" />
-        </motion.div>
-      )}
-
-      {/* ================================================= */}
-      {/* VARSHA - RIGHT DOOR */}
-      {/* ================================================= */}
-
-      {!isOpening && (
-        <motion.div
-          initial={{
-            opacity: 0,
-            x: 20,
-          }}
-          animate={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            delay: 0.4,
-            duration: 0.8,
-          }}
-          className="
-            pointer-events-none
-            absolute
-            right-[25%]
-            top-[48%]
-            z-30
-            translate-x-1/2
-            -translate-y-1/2
-            text-center
-          "
-        >
-          <p
-            className="
-              font-serif
-              text-[clamp(28px,7vw,54px)]
-              italic
-              font-medium
-              tracking-wide
-              text-[#6B1734]
-              drop-shadow-[0_2px_5px_rgba(0,0,0,0.45)]
-            "
-          >
-            Varsha
-          </p>
-
-          {/* Small decorative line */}
-          <div className="mx-auto mt-2 h-px w-16 bg-[#e3bd69]/80" />
-        </motion.div>
-      )}
+{!isOpening && (
+  <motion.div
+    initial={{
+      opacity: 0,
+      y: 15,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+      delay: 0.55,
+      duration: 0.8,
+    }}
+    className="
+      pointer-events-none
+      absolute
+      left-1/2
+      top-[56%]
+      z-30
+      -translate-x-1/2
+      -translate-y-1/2
+      text-center
+    "
+  >
+    <p
+      className="
+        maghifirea
+        whitespace-nowrap
+        text-[clamp(30px,7vw,54px)]
+        font-normal
+        tracking-wide
+        text-[#F8E7B0]
+        drop-shadow-[0_2px_5px_rgba(0,0,0,0.35)]
+      "
+    >
+      Varsha
+    </p>
+  </motion.div>
+)}
 
       {/* ================================================= */}
       {/* WEDDING - CENTER */}
