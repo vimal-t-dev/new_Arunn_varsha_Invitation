@@ -742,9 +742,9 @@ function ScratchCard() {
           whileHover={{
             scale: 1.03,
           }}
-          className="mt-[1.5dvh] shrink-0 rounded-full bg-[#8b5e3c] px-[5vw] py-[0.9dvh] text-[clamp(8px,1.4dvh,11px)] font-medium text-white shadow-md"
+          className="mt-[5.5dvh] shrink-0 rounded-full bg-[#8b5e3c] px-[7vw] py-[1.5dvh] text-xs text-white shadow-md"
         >
-          ⌛ &nbsp; Save the Date
+          <span className="font-bold text-xs">⌛ &nbsp; Save the Date</span>
         </motion.button>
       </div>
     </section>

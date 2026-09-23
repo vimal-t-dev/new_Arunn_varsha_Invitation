@@ -33,7 +33,7 @@ function DoorIntro({ onOpen }) {
       setIsVisible(false);
     }, 1500);
   };
-  
+
   if (!isVisible) {
     return null;
   }
@@ -264,46 +264,123 @@ function DoorIntro({ onOpen }) {
       {/* ================================================= */}
 
       {!isOpening && (
-        <motion.button
-          type="button"
-          onClick={handleOpen}
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            delay: 1,
-            duration: 0.8,
-          }}
-          whileTap={{
-            scale: 0.96,
-          }}
-          className="
-            absolute
-            bottom-[10%]
-            left-1/2
-            z-50
-            -translate-x-1/2
-            border
-            border-[#e3bd69]
-            bg-[#3b1712]/90
-            px-8
-            py-3.5
-            text-[9px]
-            font-medium
-            uppercase
-            tracking-[0.35em]
-            text-[#f5d98a]
-            shadow-xl
-          "
-        >
-          Touch To Open
-        </motion.button>
-      )}
+  <motion.button
+    type="button"
+    onClick={handleOpen}
+    initial={{
+      opacity: 0,
+      y: 20,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+      delay: 1,
+      duration: 0.8,
+    }}
+    whileTap={{
+      scale: 0.96,
+    }}
+    className="
+      group
+      absolute
+      bottom-[9%]
+      left-1/2
+      z-50
+      -translate-x-1/2
+
+      overflow-hidden
+      rounded-full
+      p-[2px]
+
+      shadow-[0_8px_30px_rgba(70,25,15,0.35)]
+    "
+  >
+    {/* ============================================== */}
+    {/* ROTATING GOLD BORDER */}
+    {/* ============================================== */}
+
+    <span
+      className="
+        absolute
+        inset-[-150%]
+        animate-[spin_3s_linear_infinite]
+        bg-[conic-gradient(from_0deg,transparent_0deg,transparent_280deg,#e3bd69_315deg,#fff1ad_335deg,#e3bd69_350deg,transparent_360deg)]
+      "
+    />
+
+    {/* ============================================== */}
+    {/* BUTTON CONTENT */}
+    {/* ============================================== */}
+
+    <span
+      className="
+        relative
+        flex
+        items-center
+        gap-3
+
+        rounded-full
+
+        bg-[#4a171b]/95
+
+        px-7
+        py-3.5
+
+        text-[10px]
+        font-medium
+        uppercase
+        tracking-[0.28em]
+        text-[#f8dfa0]
+
+        backdrop-blur-md
+
+        transition-all
+        duration-300
+
+        group-hover:bg-[#5a1b22]
+      "
+    >
+      {/* Decorative icon */}
+      <span
+        className="
+          flex
+          h-6
+          w-6
+          items-center
+          justify-center
+          rounded-full
+          text-[11px]
+          text-[#e3bd69]
+          transition-transform
+          duration-300
+          group-hover:rotate-45
+        "
+      >
+        ✦
+      </span>
+
+      {/* Text */}
+      <span>
+        Touch To Open
+      </span>
+
+      {/* Arrow */}
+      <span
+        className="
+          text-sm
+          text-[#e3bd69]
+          transition-transform
+          duration-300
+          group-hover:translate-x-1
+        "
+      >
+        ✦
+      </span>
+    </span>
+  </motion.button>
+)}
 
       {/* ================================================= */}
       {/* OPENING LIGHT */}
