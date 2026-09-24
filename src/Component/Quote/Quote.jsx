@@ -20,7 +20,7 @@ function Quote() {
       {/* CONTENT */}
       {/* ========================================= */}
 
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col items-center justify-center px-8 text-center">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col items-center justify-center px-8 text-center mt-[-30px]">
         {/* ========================================= */}
         {/* FOREVER */}
         {/* ========================================= */}
@@ -217,6 +217,131 @@ function Quote() {
           <span className="mx-2 text-[#74163C]">♥</span>
           Varsha
         </motion.p>
+
+        {/* ========================================= */}
+{/* FAMILY NAMES */}
+{/* ========================================= */}
+
+<div className="mt-[2.2dvh] flex w-full max-w-[360px] justify-between gap-4">
+
+  {/* ========================================= */}
+  {/* GROOM FAMILY */}
+  {/* ========================================= */}
+
+  <motion.div
+    initial={{
+      opacity: 0,
+      y: 15,
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+    }}
+    viewport={{
+      once: true,
+    }}
+    transition={{
+      duration: 0.8,
+      delay: 1.1,
+      ease: "easeOut",
+    }}
+    className="flex w-1/2 flex-col items-center text-center"
+  >
+
+    {/* Decorative heading */}
+    <div className="mb-[0.6dvh] flex items-center gap-2">
+      <span className="h-px w-5 bg-[#B47716]/60" />
+
+      <p
+        className="
+          creme-espana
+          text-[clamp(11px,1.8dvh,14px)]
+          tracking-[0.08em]
+          text-[#A56818]
+        "
+      >
+        Groom's Family
+      </p>
+
+      <span className="h-px w-5 bg-[#B47716]/60" />
+    </div>
+
+    {/* Family Members */}
+    <div
+      className="
+        maghifirea
+        text-[clamp(14px,2.4dvh,18px)]
+        leading-[1.35]
+        text-[#4A2923]
+      "
+    >
+      <p>G. Thirugnanam</p>
+      <p>R. Radhamani</p>
+      <p>T. Vimal</p>
+    </div>
+
+  </motion.div>
+
+
+  {/* ========================================= */}
+  {/* BRIDE FAMILY */}
+  {/* ========================================= */}
+
+  <motion.div
+    initial={{
+      opacity: 0,
+      y: 15,
+    }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+    }}
+    viewport={{
+      once: true,
+    }}
+    transition={{
+      duration: 0.8,
+      delay: 1.2,
+      ease: "easeOut",
+    }}
+    className="flex w-1/2 flex-col items-center text-center"
+  >
+
+    {/* Decorative heading */}
+    <div className="mb-[0.6dvh] flex items-center gap-2">
+      <span className="h-px w-5 bg-[#B47716]/60" />
+
+      <p
+        className="
+          creme-espana
+          text-[clamp(11px,1.8dvh,14px)]
+          tracking-[0.08em]
+          text-[#A56818]
+        "
+      >
+        Bride's Family
+      </p>
+
+      <span className="h-px w-5 bg-[#B47716]/60" />
+    </div>
+
+    {/* Family Members */}
+    <div
+      className="
+        maghifirea
+        text-[clamp(14px,2.4dvh,18px)]
+        leading-[1.35]
+        text-[#4A2923]
+      "
+    >
+      <p>P. Jayaraj</p>
+      <p>J. Shreevidhya</p>
+      <p>J. Aditya</p>
+    </div>
+
+  </motion.div>
+
+</div>
       </div>
     </section>
   );

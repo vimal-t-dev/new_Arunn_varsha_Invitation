@@ -154,24 +154,24 @@ function Countdown() {
         {/* ================================================= */}
 
         <motion.div
-  initial={{
-    opacity: 0,
-    scale: 0.95,
-    y: 15,
-  }}
-  whileInView={{
-    opacity: 1,
-    scale: 1,
-    y: 0,
-  }}
-  viewport={{
-    once: true,
-  }}
-  transition={{
-    duration: 0.8,
-    delay: 0.15,
-  }}
-  className="
+          initial={{
+            opacity: 0,
+            scale: 0.95,
+            y: 15,
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.15,
+          }}
+          className="
     mt-[2.2dvh]
     flex
     w-full
@@ -179,18 +179,18 @@ function Countdown() {
     justify-center
     rounded-[18px]
     bg-gradient-to-r
-  from-[#B8CDB8]
-  via-[#C6D5C2]
-  to-[#D8D8C0]
+    from-[#B8CDB8]
+    via-[#C6D5C2]
+    to-[#D8D8C0]
     px-[3vw]
     py-[2.2dvh]
   "
->
-  {countdownItems.map((item, index) => (
-    <React.Fragment key={item.label}>
-      {/* COUNTDOWN ITEM */}
-      <div
-        className="
+        >
+          {countdownItems.map((item, index) => (
+            <React.Fragment key={item.label}>
+              {/* COUNTDOWN ITEM */}
+              <div
+                className="
           flex
           min-w-0
           flex-1
@@ -198,22 +198,22 @@ function Countdown() {
           items-center
           justify-center
         "
-      >
-        {/* NUMBER */}
-        <motion.span
-          key={item.value}
-          initial={{
-            opacity: 0.5,
-            y: -3,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.25,
-          }}
-          className="
+              >
+                {/* NUMBER */}
+                <motion.span
+                  key={item.value}
+                  initial={{
+                    opacity: 0.5,
+                    y: -3,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.25,
+                  }}
+                  className="
             font-['Montserrat']
             text-[clamp(30px,6.5dvh,52px)]
             font-medium
@@ -221,28 +221,28 @@ function Countdown() {
             tracking-[-0.02em]
             text-[#151b2b]
           "
-        >
-          {formatNumber(item.value)}
-        </motion.span>
+                >
+                  {formatNumber(item.value)}
+                </motion.span>
 
-        {/* LABEL */}
-        <span
-          className="
+                {/* LABEL */}
+                <span
+                  className="
             mt-[1.2dvh]
             text-[clamp(7px,1.25dvh,11px)]
             font-medium
             tracking-wide
             text-[#172033]
           "
-        >
-          {item.label}
-        </span>
-      </div>
+                >
+                  {item.label}
+                </span>
+              </div>
 
-      {/* COLON */}
-      {index < countdownItems.length - 1 && (
-        <span
-          className="
+              {/* COLON */}
+              {index < countdownItems.length - 1 && (
+                <span
+                  className="
             mb-[2.3dvh]
             flex
             items-center
@@ -254,13 +254,13 @@ function Countdown() {
             leading-none
             text-[#151b2b]
           "
-        >
-          :
-        </span>
-      )}
-    </React.Fragment>
-  ))}
-</motion.div>
+                >
+                  :
+                </span>
+              )}
+            </React.Fragment>
+          ))}
+        </motion.div>
 
         {/* ================================================= */}
         {/* VIDEO */}
@@ -297,9 +297,9 @@ function Countdown() {
             preload="metadata"
             className="block h-[clamp(300px,49dvh,450px)] w-full object-cover"
             style={{
-                transform: "translateZ(0)",
+              transform: "translateZ(0)",
             }}
-            />
+          />
 
           {/* SOFT VIDEO OVERLAY */}
 

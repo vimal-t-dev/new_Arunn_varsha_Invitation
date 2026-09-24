@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 
 import eventsBg from "../../assets/wedding/Events_BG.jpg";
-import weddingImage from "../../assets/wedding/Wedding-Image.jpg";
-import receptionImage from "../../assets/wedding/Reception-Image.jpg";
+import weddingImage from "../../assets/wedding/Wedding-Image.jpeg";
+import receptionImage from "../../assets/wedding/Reception-Image.jpeg";
 
 function Events() {
   // =========================================================
@@ -115,7 +115,7 @@ function Events() {
                 {/* LABEL */}
 
                 <p className="text-[clamp(6px,1dvh,8px)] font-semibold uppercase tracking-[0.35em] text-[#a16a19]">
-                  02 • Wedding
+                  01 • Wedding
                 </p>
 
                 {/* TITLE */}
@@ -231,7 +231,7 @@ function Events() {
                 {/* LABEL */}
 
                 <p className="text-[clamp(6px,1dvh,8px)] font-semibold uppercase tracking-[0.35em] text-[#a16a19]">
-                  01 • Reception
+                  02 • Reception
                 </p>
 
                 {/* TITLE */}
