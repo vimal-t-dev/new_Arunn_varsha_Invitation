@@ -15,13 +15,24 @@ function WeddingHome() {
 
       {/* Content */}
       <div className="relative z-10 flex h-full w-full flex-col items-center text-center">
+
+        <p className="mt-[4vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
+          ஓம் நமசிவாய
+        </p>
+
         {/* Blessings */}
-        <p className="mt-[18vh] px-6 text-[10px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
-          WITH THE BLESSINGS OF OUR FAMILIES
+        <p className="mt-[14vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
+          WITH THE BLESSINGS  <br/> OF OUR FAMILIES
+        </p>
+
+        <p className="mt-[4vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
+          அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை
+          <br/>
+          பண்பும் பயனும் அது
         </p>
 
         {/* Om */}
-        <div className="mt-[3vh] text-4xl text-[#b47716]">ௐ</div>
+        {/* <div className="mt-[3vh] text-4xl text-[#b47716]">ௐ</div> */}
 
         {/* Bride & Groom Names */}
         {/* <div className="mt-[5vh]">
@@ -49,8 +60,10 @@ function WeddingHome() {
           </p>
         </div>
 
+        <span className="mx-2 mt-4 text-red-500 text-[22px]">♥</span>
+
         {/* Bride Details */}
-        <div className="mt-[3vh]">
+        <div className="mt-[2vh]">
           <h2 className="font-['Magilio'] text-2xl font-bold text-[#74163c] sm:text-3xl">
             Varsha
           </h2>
@@ -79,7 +92,7 @@ function WeddingHome() {
         </div>
 
         {/* Scroll To Begin */}
-        <div className="mt-[10vh] flex flex-col items-center">
+        <div className="mt-[8vh] flex flex-col items-center">
           <p className="text-[12px] tracking-[0.25em] text-[#a56818]">
             SCROLL TO BEGIN
           </p>
