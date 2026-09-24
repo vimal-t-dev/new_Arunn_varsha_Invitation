@@ -79,7 +79,7 @@ function WeddingHome() {
         </div>
 
         {/* Scroll To Begin */}
-        <div className="mt-[20vh] flex flex-col items-center">
+        <div className="mt-[10vh] flex flex-col items-center">
           <p className="text-[12px] tracking-[0.25em] text-[#a56818]">
             SCROLL TO BEGIN
           </p>
