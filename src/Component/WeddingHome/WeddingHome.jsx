@@ -56,7 +56,7 @@ function WeddingHome() {
           </h2>
 
           <p className="mt-1 px-4 text-[10px] text-[#24120f] sm:text-xs">
-            D/O Mr. Jayaraj & Mrs. Shreevidhya
+            D/O Mr. Jayaraj & Mrs. Sreevidhya
           </p>
         </div>
 
