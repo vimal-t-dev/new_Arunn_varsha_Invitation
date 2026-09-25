@@ -7,6 +7,13 @@ function MusicPlayer({ startMusic }) {
 
   const [isPlaying, setIsPlaying] = useState(false);
 
+  // Set default volume to 50%
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.5;
+    }
+  }, []);
+
   // Start music when requested by the DoorIntro
   useEffect(() => {
     if (!startMusic || !audioRef.current) return;
@@ -17,7 +24,7 @@ function MusicPlayer({ startMusic }) {
         setIsPlaying(true);
       } catch (error) {
         console.log("Music could not start:", error);
-      }
+      }s
     };
 
     playMusic();
