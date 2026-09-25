@@ -25,11 +25,11 @@ function WeddingHome() {
           WITH THE BLESSINGS  <br/> OF OUR FAMILIES
         </p>
 
-        <p className="mt-[4vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
+        {/* <p className="mt-[4vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
           அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை
           <br/>
           பண்பும் பயனும் அது
-        </p>
+        </p> */}
 
         {/* Om */}
         {/* <div className="mt-[3vh] text-4xl text-[#b47716]">ௐ</div> */}
