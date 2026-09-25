@@ -85,7 +85,7 @@ function WeddingHome() {
         {/* Invitation Message */}
         <div className="mt-[2vh] max-w-[330px] px-6">
           <p className="text-xs leading-relaxed text-[#24120f] sm:text-sm">
-            Together with their families, they invite you to
+            Together with their families, they invite you to{" "}
             <br className="hidden sm:block" />
             celebrate the beginning of their forever.
           </p>
