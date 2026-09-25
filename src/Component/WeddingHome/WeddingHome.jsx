@@ -16,7 +16,7 @@ function WeddingHome() {
       {/* Content */}
       <div className="relative z-10 flex h-full w-full flex-col items-center text-center">
 
-        <p className="mt-[4vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
+        <p className="mt-[3vh] px-6 text-[11px] font-bold tracking-[0.25em] text-yellow-900 sm:text-xs font-mono">
           ஓம் நமசிவாய
         </p>
 
